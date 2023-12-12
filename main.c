@@ -9,6 +9,6 @@ int main(void)
 {
 	shell_loop(); /* Call the shell loop function */
 
-	return 0;
+	return (0);
 }
 
