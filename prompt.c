@@ -5,8 +5,7 @@
  *
  * Return: void.
  */
-void display_prompt()
+void display_prompt(void)
 {
-    myprint("$ ");
+	myprint("$ ");
 }
-
