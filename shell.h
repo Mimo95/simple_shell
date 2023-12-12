@@ -2,8 +2,10 @@
 #define __SHELL_H__
 
 /**
- * this header file contains the declaration of the functions used in this main program
- * it also includes the necessary headers for sepicific funcionalities, such as system
+ * this header file contains the declaration of
+ * the functions used in this main program
+ * it also includes the necessary headers for sepicific
+ * functionalities, such as system
  * functions and external variables
  *
  */
@@ -23,9 +25,9 @@
 extern char **environ; /* Declaration of the environ variable */
 
 void myprint(char *msg);
-void display_prompt();
+void display_prompt(void);
 void execute_command(char *command);
-void shell_loop();
+void shell_loop(void);
 char **tokenize(char *command);
 void free_tokens(char **tokens);
 int _strlen(char *s);
