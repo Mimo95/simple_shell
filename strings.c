@@ -7,15 +7,15 @@
  */
 int _strlen(char *s)
 {
-int i = 0;
-int j = 0;
+	int i = 0;
+	int j = 0;
 
-while (s[i] != '\0')
-{
-    j++;
-    i++;
-}
-return (j);
+	while (s[i] != '\0')
+	{
+		j++;
+		i++;
+	}
+	return (j);
 }
 
 /**
@@ -71,15 +71,16 @@ char *_strdup(char *str)
 
 int _strcmp(char *s1, char *s2)
 {
-    int i;
-    for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
-    {
-        if (s1[i] != s2[i])
-        {
-            return (s1[i] - s2[i]);
-        }
-        }
-return (s1[i] - s2[i]);
+	int i;
+
+	for (i = 0; s1[i] != '\0' && s2[i] != '\0'; i++)
+	{
+		if (s1[i] != s2[i])
+		{
+			return (s1[i] - s2[i]);
+		}
+	}
+	return (s1[i] - s2[i]);
 }
 /**
  * _strspn - a function that gets the
@@ -93,23 +94,23 @@ return (s1[i] - s2[i]);
 
 int _strspn(char *s, char *accept)
 {
-    int i, j, d;
+	int i, j, d;
 
-    for (i = 0; s[i] != '\0'; i++)
-    {
-        d = 0;
-        for (j = 0; accept[j] != '\0'; j++)  
-        {
-            if (s[i] == accept[j])
-            {
-                d = 1;
-                break;
-            }
-        }
-        if (!d)
-        {
-            break;
-        }
-    }
-    return (i);
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		d = 0;
+		for (j = 0; accept[j] != '\0'; j++)
+		{
+			if (s[i] == accept[j])
+			{
+				d = 1;
+				break;
+			}
+		}
+		if (!d)
+		{
+			break;
+		}
+	}
+	return (i);
 }
