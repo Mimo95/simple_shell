@@ -2,7 +2,7 @@
 #define __SHELL_H__
 
 /**
- * this header file contains the declaration of
+ * header file - contains the declaration of
  * the functions used in this main program
  * it also includes the necessary headers for sepicific
  * functionalities, such as system
