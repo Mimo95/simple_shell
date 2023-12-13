@@ -24,6 +24,7 @@ void shell_loop(void)
 			if (isatty(STDIN_FILENO)) /* Handle end of file (Ctrl+D) or error */
 			{
 				myprint("\n");
+				exit(EXIT_SUCCESS);
 			}
 			break;
 		}
